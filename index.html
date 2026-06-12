@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title</title>
+    <!-- Tailwind CSS CDN para estilos rápidos y modernos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+    <!-- Navbar / Encabezado -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-baseball text-blue-500 text-2xl"></i>
+                <span class="text-xl font-bold tracking-wider uppercase bg-gradient-to-r flow-from-blue-400 to-indigo-500 bg-clip-text text-transparent">BaseZone</span>
+            </div>
+            <nav class="flex gap-6 text-sm font-semibold text-slate-400">
+                <a href="#bateadores" class="hover:text-blue-400 transition">Bateadores</a>
+                <a href="#lanzadores" class="hover:text-blue-400 transition">Lanzadores</a>
+                <a href="#lideres" class="hover:text-blue-400 transition">Líderes de Temporada</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 py-12 text-center">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4">
+            LOS MEJORES DEL <span class="text-blue-500">MOMENTO</span>
+        </h1>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+            Análisis, estadísticas calientes y las superestrellas que están definiendo el ritmo de la actual campaña en Las Mayores.
+        </p>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 space-y-16 pb-24">
+
+        <!-- SECCIÓN BATEADORES -->
+        <section id="bateadores" class="scroll-mt-20">
+            <div class="flex items-center gap-3 mb-8 border-b border-slate-800 pb-2">
+                <i class="fa-solid fa-user-ninja text-amber-500 text-xl"></i>
+                <h2 class="text-2xl font-bold">Peloteros / Slugging Élite</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tarjeta 1: Shohei Ohtani -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold text-blue-500 uppercase tracking-widest">LAD • DH</span>
+                            <h3 class="text-xl font-bold group-hover:text-blue-400 transition">Shohei Ohtani</h3>
+                        </div>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded font-mono">#1 Top</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">Redefiniendo la historia. Manteniendo un OBP élite y proyectando otra campaña histórica de poder y velocidad en la Liga Nacional.</p>
+                    <div class="grid grid-cols-3 gap-2 text-center border-t border-slate-800 pt-4">
+                        <div><p class="text-xs text-slate-500 font-medium">AVG</p><p class="text-lg font-bold font-mono">.302</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">OBP</p><p class="text-lg font-bold font-mono">.411</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">OPS</p><p class="text-lg font-bold font-mono">1.020</p></div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Juan Soto -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold text-blue-500 uppercase tracking-widest">NYY • LF</span>
+                            <h3 class="text-xl font-bold group-hover:text-blue-400 transition">Juan Soto</h3>
+                        </div>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded font-mono">Élite</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">Disciplina pura en el plato. El dominicano sigue desgastando lanzadores con una zona de strike perfecta y embasado garantizado.</p>
+                    <div class="grid grid-cols-3 gap-2 text-center border-t border-slate-800 pt-4">
+                        <div><p class="text-xs text-slate-500 font-medium">AVG</p><p class="text-lg font-bold font-mono">.290</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">OBP</p><p class="text-lg font-bold font-mono">.368</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">WRC+</p><p class="text-lg font-bold font-mono">155</p></div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Aaron Judge -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold text-blue-500 uppercase tracking-widest">NYY • RF</span>
+                            <h3 class="text-xl font-bold group-hover:text-blue-400 transition">Aaron Judge</h3>
+                        </div>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded font-mono">Poder</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">El poder personificado. Cada swing sigue transformando los estadios, manteniéndose firme en el liderato de cuadrangulares.</p>
+                    <div class="grid grid-cols-3 gap-2 text-center border-t border-slate-800 pt-4">
+                        <div><p class="text-xs text-slate-500 font-medium">HR</p><p class="text-lg font-bold font-mono">17</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">RBI</p><p class="text-lg font-bold font-mono">48</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">SLG</p><p class="text-lg font-bold font-mono">.580</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN LANZADORES -->
+        <section id="lanzadores" class="scroll-mt-20">
+            <div class="flex items-center gap-3 mb-8 border-b border-slate-800 pb-2">
+                <i class="fa-solid fa-baseball-bat-ball text-blue-500 text-xl"></i>
+                <h2 class="text-2xl font-bold">Lanzadores / Ases de la Rotación</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Tarjeta 1: Paul Skenes -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-widest">PIT • SP</span>
+                            <h3 class="text-xl font-bold group-hover:text-red-400 transition">Paul Skenes</h3>
+                        </div>
+                        <span class="bg-red-950/50 text-red-400 text-xs px-2 py-1 rounded font-mono font-bold">Fuego</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">Intimidación pura desde la lomita. Su control quirúrgico y velocidad sostenida lo consolidan como un as indescifrable.</p>
+                    <div class="grid grid-cols-3 gap-2 text-center border-t border-slate-800 pt-4">
+                        <div><p class="text-xs text-slate-500 font-medium">ERA</p><p class="text-lg font-bold font-mono">1.98</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">SO</p><p class="text-lg font-bold font-mono">82</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">WHIP</p><p class="text-lg font-bold font-mono">0.96</p></div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Tarik Skubal -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-widest">DET • SP</span>
+                            <h3 class="text-xl font-bold group-hover:text-red-400 transition">Tarik Skubal</h3>
+                        </div>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded font-mono">Dominio</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">Calma absoluta y dominio de picheo secundario. Cuando Skubal abre un partido, Detroit sabe que salta al terreno a ganar.</p>
+                    <div class="grid grid-cols-3 gap-2 text-center border-t border-slate-800 pt-4">
+                        <div><p class="text-xs text-slate-500 font-medium">ERA</p><p class="text-lg font-bold font-mono">2.20</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">WHIP</p><p class="text-lg font-bold font-mono">1.02</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">IP</p><p class="text-lg font-bold font-mono">78.1</p></div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Jacob Misiorowski -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-widest">MIL • SP</span>
+                            <h3 class="text-xl font-bold group-hover:text-red-400 transition">J. Misiorowski</h3>
+                        </div>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded font-mono">Líder K</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mb-6">La gran sensación en ponches de la temporada. Su tasa por cada 9 entradas está rompiendo esquemas en la Liga Nacional.</p>
+                    <div class="grid grid-cols-3 gap-2 text-center border-t border-slate-800 pt-4">
+                        <div><p class="text-xs text-slate-500 font-medium">ERA</p><p class="text-lg font-bold font-mono">1.50</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">SO</p><p class="text-lg font-bold font-mono">116</p></div>
+                        <div><p class="text-xs text-slate-500 font-medium">oAVG</p><p class="text-lg font-bold font-mono">.151</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN LÍDERES EN TABLA -->
+        <section id="lideres" class="scroll-mt-20">
+            <div class="flex items-center gap-3 mb-6">
+                <i class="fa-solid fa-list-ol text-indigo-400 text-xl"></i>
+                <h2 class="text-2xl font-bold">Líderes de Estadísticas Recientes</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tabla Bateo -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                    <div class="px-6 py-4 bg-slate-800/50 border-b border-slate-800">
+                        <h3 class="font-bold text-sm uppercase tracking-wider text-amber-400">Top Bateo (AVG)</h3>
+                    </div>
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="text-slate-500 border-b border-slate-800">
+                                <th class="p-4 font-semibold">Jugador</th>
+                                <th class="p-4 font-semibold">Equipo</th>
+                                <th class="p-4 font-semibold text-right">Promedio</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/50 font-mono">
+                            <tr class="hover:bg-slate-800/20"><td class="p-4 font-sans font-medium text-slate-200">Otto Lopez</td><td class="p-4 text-slate-400">MIA</td><td class="p-4 text-right font-bold text-emerald-400">.344</td></tr>
+                            <tr class="hover:bg-slate-800/20"><td class="p-4 font-sans font-medium text-slate-200">Brandon Marsh</td><td class="p-4 text-slate-400">PHI</td><td class="p-4 text-right font-bold text-slate-300">.333</td></tr>
+                            <tr class="hover:bg-slate-800/20"><td class="p-4 font-sans font-medium text-slate-200">Luis Arráez</td><td class="p-4 text-slate-400">SD</td><td class="p-4 text-right font-bold text-slate-300">.325</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabla Pitcheo -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                    <div class="px-6 py-4 bg-slate-800/50 border-b border-slate-800">
+                        <h3 class="font-bold text-sm uppercase tracking-wider text-red-400">Top Ponches (SO)</h3>
+                    </div>
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="text-slate-500 border-b border-slate-800">
+                                <th class="p-4 font-semibold">Lanzador</th>
+                                <th class="p-4 font-semibold">Equipo</th>
+                                <th class="p-4 font-semibold text-right">Strikes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/50 font-mono">
+                            <tr class="hover:bg-slate-800/20"><td class="p-4 font-sans font-medium text-slate-200">Jacob Misiorowski</td><td class="p-4 text-slate-400">MIL</td><td class="p-4 text-right font-bold text-red-400">116</td></tr>
+                            <tr class="hover:bg-slate-800/20"><td class="p-4 font-sans font-medium text-slate-200">Cristopher Sánchez</td><td class="p-4 text-slate-400">PHI</td><td class="p-4 text-right font-bold text-slate-300">113</td></tr>
+                            <tr class="hover:bg-slate-800/20"><td class="p-4 font-sans font-medium text-slate-200">Gavin Williams</td><td class="p-4 text-slate-400">CLE</td><td class="p-4 text-right font-bold text-slate-300">99</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950 text-center py-6 text-xs text-slate-600">
+        <p>&copy; 2026 BaseZone. Datos actualizados en tiempo real de Las Mayores.</p>
+    </footer>
+
+</body>
+</html>
